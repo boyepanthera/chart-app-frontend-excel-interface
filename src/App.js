@@ -1,26 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <div>
+    <iframe title='MPR sheet' style={styles.excelSheet} frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=C8F3AAF5577C0464%212209&authkey=%21AM8eamHq4G4O_ms&em=2&AllowTyping=True&ActiveCell='1%20LCY%20LODGMENT'!A1&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
+  </div>
   );
 }
 
+const styles = {
+  excelSheet: {
+    width: '100%',
+    height: '100%',
+    position:'absolute'
+
+  }
+}
 export default App;
